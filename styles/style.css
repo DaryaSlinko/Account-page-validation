@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunitoregular.woff") format("woff"),
+    url("../fonts/Nunitoregular.woff2") format("woff2");
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    width: 100%;
+    background: linear-gradient(to right, #F8F8FA 50.2%, #E5E5E5 50.2%);
+}
+
+
+.logo-img {
+    width: 262px;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0 63px;
+}
+
+.info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 0 191px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 52px;
+}
+
+.title {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.undertittle {
+    font-size: 22px;
+    max-width: 496px;
+    line-height: 27px;
+    color: #636363;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
+#person-info-form {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.input-title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 16px;
+    color: #C6C6C4;
+    margin-bottom: 5px;
+}
+
+.input {
+    max-width: 452px;
+    border: none;
+    border-bottom: 1px solid #C6C6C4;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #323232;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+
+    background-color: #F8F8FA;
+
+}
+
+.agree-check-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#signUp {
+    width: 210px;
+    height: 70px;
+    background: #DD3142;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 44px;
+    cursor: pointer;
+
+    margin-left: 116px;
+
+}
+
+.have-account-link, .registration-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #636363;
+    text-decoration: none;
+    margin-left: 130px;
+}
+
+.registration-link {
+    display: none;
+    margin-left: 180px;
+}
+
+
+.rocet-img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    height: 600px;
+    max-width: 543px;
+    align-self: center;
+}
+
+.rocet-img img {
+    width: 100%;
+}
+
+.popup {
+    display: none;
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 250px);
+
+    z-index: 10;
+    background-color: rgba(143, 143, 143, 0.75);
+    border-radius: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+
+}
+
+.popup-btn {
+    width: 210px;
+    height: 70px;
+    background: #DD3142;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    margin: 40px auto 44px;
+    cursor: pointer;
+    display: block;
+}
+
+.open {
+    display: block;
+    animation: popup 2s;
+
+}
+
+@keyframes popup {
+
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+
+.invalid-feedback {
+    font-size: 14px;
+    color: #ee2020;
+    margin-top: -20px;
+    text-align: center;
+    max-width: 452px;
+    visibility: hidden;
+
+
+}
+
+.invalid-feedback2 {
+    font-size: 14px;
+    color: #ee2020;
+    margin-top: -20px;
+    text-align: center;
+    max-width: 452px;
+    visibility: hidden;
+
+}
+
+.form-control:valid {
+    border-bottom: 1px solid #097c09;
+}
+
+.form-control:invalid {
+    border-bottom: 1px solid #ee2020;
+}
+
+.invalid-data {
+    font-size: 14px;
+    color: #ee2020;
+    margin-top: -20px;
+    text-align: center;
+    max-width: 452px;
+    visibility: hidden;
+}
+.invalid-user , .invalid-user-password {
+    font-size: 14px;
+    color: #ee2020;
+    margin-top: -20px;
+    text-align: center;
+    max-width: 452px;
+    visibility: hidden;
+
+}
+
+.wrong-user{
+    border-bottom: 1px solid #ee2020;
+}
+
+

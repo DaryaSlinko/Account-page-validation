@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get your free account</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<header class="header">
+    <img src="images/homeWorks.png" alt="Logo" class="logo-img">
+</header>
+<section class="info">
+    <div class="title">Get your free account
+    </div>
+    <div class="undertittle forRemoveForAccount">Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.</div>
+    <form id="person-info-form" novalidate>
+        <div>
+            <label class="input-title forRemove ">Full Name
+                <input type="text" class="input name " required pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+            </label>
+            <div class="invalid-feedback">Заполните поле</div>
+            <div class="invalid-data">Поле мoжет содержать только буквы и знак пробела</div>
+        </div>
+        <div class="forRemoveForAccount">
+            <label class="input-title">Your username
+                <input type="text" class="input username " required pattern="^[a-zA-ZА-Яа-яЁё0-9-_]+$">
+            </label>
+            <div class="invalid-feedback">Заполните поле</div>
+            <div class="invalid-data">Мoжет содержать буквы, цифры, символ подчеркивания, тире</div>
+            <div class="invalid-user">Такой пользователь не зарегистрирован</div>
+        </div>
+        <div>
+            <label class="input-title forRemove">E-mail
+                <input type="text" class="input email " required pattern="\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}">
+            </label>
+            <div class="invalid-feedback">Заполните поле</div>
+            <div class="invalid-data">Поле может быть в формате user@email.com</div>
+        </div>
+        <div class="forRemoveForAccount">
+            <label class="input-title">Password
+                <input type="text" class="input password " required pattern="((?=.*\d)^(?=.*[-!@#$%^&+*])(?=.*[a-z])(?=.*[A-Z]).{8,})">
+            </label>
+            <div class="invalid-feedback">Заполните поле</div>
+            <div class="invalid-feedback2">Пароли не совпадают</div>
+            <div class="invalid-data">Минимум 8 символов. Одна заглавная буква, цифра и спецсимвол</div>
+            <div class="invalid-user-password">Неверный пароль</div>
+
+        </div>
+        <div>
+            <label class="input-title forRemove">Repeat Password
+                <input type="password" class="input password-repeat " required pattern="((?=.*\d)^(?=.*[-!@#$%^&+*])(?=.*[a-z])(?=.*[A-Z]).{8,})">
+            </label>
+            <div class="invalid-feedback">Повторите пароль</div>
+            <div class="invalid-feedback2">Пароли не совпадают</div>
+        </div>
+<div class="forRemoveForAccount">
+
+    <label class="agree-check-title">
+        <input type="checkbox" id="agree-check" required>
+        Agree to our Terms of Service and Privacy Statement
+    </label>
+</div>
+      
+        <button id="signUp">Sign Up</button>
+    </form>
+
+    <a href="#" class="have-account-link forRemove">Already have an account?</a>
+    <a href="#" class="registration-link forRemoveForAccount ">Registration</a>
+
+    <div class="rocet-img">
+        <img src="images/image.png" alt="Rocket">
+    </div>
+    <div class="popup">
+        На вашу почту <span class="popup-span">  </span> выслана ссылка, перейдите по ней, чтобы завершить регистрацию
+        <button class="popup-btn" type="submit">Ok</button>
+    </div>
+</section>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
